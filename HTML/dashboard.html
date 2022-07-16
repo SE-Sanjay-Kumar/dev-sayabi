@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SayabiDev | Home</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.20.2/dist/bootstrap-table.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+
+  <!--------------- NavBar---------------------------------------->
+
+
+
+  <section id="nav-bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../images/demo-logo.png" alt=""></a>
+        <!--------------- Logo????--------------------------------------->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Orders">View Orders</a>
+            </li>
+            <li>
+              <input class="btn btn-warning" type="button" value="Logout" id="logout">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+  <section id="Orders">
+    
+    <div class="container order-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi magni, eius harum consequatur expedita adipisci
+        dolorum neque quasi facere aspernatur soluta accusamus quas ipsam delectus quos! Officia nihil fuga omnis?</p>
+      
+    
+      <table class="table-striped border-primary bg-light">
+      <thead>
+        <tr>
+          <th data-field="name">
+            <span class="text-danger">
+              Name
+            </span>
+          </th>
+          <th data-field="deadline">
+            <span class="text-danger">
+              Deadline
+            </span>
+          </th>
+          <th data-field="category">
+            <span class="text-danger">
+              Category
+            </span>
+          </th>
+          <th data-field="description">
+            <span class="text-danger">
+              Description
+            </span>
+          </th>
+          <th data-field="price">
+            <span class="text-danger">
+              Price
+            </span>
+          </th>
+          <th data-field="status">
+            <span class="text-danger">
+              Status
+            </span>
+          </th>
+          <th data-field="username">
+            <span class="text-danger">
+              Order By 
+            </span>
+          </th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
+  <script src="../JS/dashboard.js"></script>
+
+</body>
+
+</html>

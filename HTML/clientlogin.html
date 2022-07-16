@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SayabiDev | Client Login</title>
+    <link rel="stylesheet" href="../CSS/login_style.css">
+</head>
+
+<body>
+
+
+    <div class="login">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/sayabidevs/"><img src="../images/facebook-icon.png"></a>
+                <a href="https://www.linkedin.com/company/sayabi/"><img src="../images/linkedin-icon.png"></a>
+                <a href="https://web.whatsapp.com/"><img src="../images/whatsapp-icon.png"></a>
+
+            </div>
+            <form id="Login" class="input-group">
+                <input type="text" id="lusername" class="input-field" placeholder="Enter User Name" required>
+                <input type="password" id="lpassword" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Me</span>
+                <input type="button" id="sign-in" class="submit-btn"  value="sign in">
+            </form>
+             
+            <form id="register" class="input-group" >
+                <input type="text" class="input-field" id="rusername" placeholder="Enter User Name" required><br>
+                <input type="password" class="input-field" id="rpassword" placeholder="Enter Password" required><br><br>
+                <input type="button" class="submit-btn" id="sign-up"  value="sign up" >
+            </form>
+
+        </div>
+
+
+    </div>
+
+    <script>
+        var x = document.getElementById("Login")
+        var y = document.getElementById("register")
+        var z = document.getElementById("btn")
+
+        function register()
+
+        {
+            x.style.left = "-400px"
+            y.style.left = "50px"
+            z.style.left = "110px"
+        }
+
+
+        function Login()
+
+        {
+            x.style.left = "50px"
+            y.style.left = "450px"
+            z.style.left = "0px"
+        }
+    </script>
+    <script src="../JS/client.js"></script>
+</body>
+
+</html>
